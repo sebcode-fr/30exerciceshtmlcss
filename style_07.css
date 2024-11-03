@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour la version petit écran de type smartphone */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8fafc;
+}
+
+.container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 20px;
+}
+
+article {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #cbd5e1;
+}
+
+img {
+    max-width: 100%;
+}
+
+.description {
+    padding: 20px;
+    text-align: center;
+}
+
+h2, p {
+    margin-bottom: 10px;
+}
+
+p {
+    color: gray;
+    text-align: justify;
+}
+
+.button {
+    background-color: darkorange;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Styles pour les écrans de tailles moyennes (tablette) */
+@media only screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Styles pour les écrans de grandes tailles (desktop) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

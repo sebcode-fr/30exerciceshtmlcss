@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #262626; 
+}
+.container {
+    /* Elément avec les mêmes dimensions que l'image */
+    height: 480px;
+    width: 853px;
+    background-image: url("./images/banner-travel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #cbd5e1;
+}
+.col {
+    width: 450px;
+    height: 100%;
+    float: right;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+p {
+    color: white;
+    margin-top: 10px;
+}
+input {
+    padding: 8px;
+    margin-bottom: 30px;
+    border: none;
+}
+.button {
+    background-color: #262626;
+    color: white;
+}
+.w100 {
+    width: 100%;
+}

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 1fr 75px;
+    grid-template-areas: 
+        "header header header"
+        "aside main main"
+        "footer footer footer";
+}
+p {
+    text-align: center;
+    padding-top: 10px;
+}
+header {
+    background-color: aqua;
+    grid-area: header;
+}
+main {
+    background-color: chartreuse;
+    grid-area: main;
+    min-height: 500px;
+}
+aside {
+    background-color: coral;
+    grid-area: aside;
+}
+footer {
+    background-color:lightskyblue;
+    grid-area: footer;
+}

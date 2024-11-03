@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.hero-image {
+    min-height: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./images/maldives.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+.hero-text {
+    position: absolute;
+    top: 20%;
+}
+h1 {
+    font-size: 3.5rem;
+    color: aqua;
+    margin-bottom: 20px;
+}
+h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+.button {
+    background-color: aqua;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,26 @@
+blockquote {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: lightblue;
+    padding: 40px 80px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    text-align: justify;
+    position: relative;
+}
+blockquote::before {
+    content: open-quote;
+    top: 0;
+    left: 0;
+}
+blockquote::after {
+    content: close-quote;
+    right: 0;
+    bottom: 0;
+}
+blockquote::before, blockquote::after {
+    margin: 20px;
+    position: absolute;
+    opacity: 0.25;
+    font-size: 3rem;
+}

@@ -1,0 +1,34 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .icon {
+  position: relative;
+  margin: 0 10px;
+  font-size: 1.4rem;
+  color: #333;
+}
+.fa-brands {
+  font-size: 2rem;
+}
+.icon:hover {
+  color: orangered;
+}
+.icon::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: orangered;
+  color: #fff;
+  padding:  5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;  
+}
+.icon:hover::after {
+  opacity: 1;
+}

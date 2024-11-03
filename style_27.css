@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #DDD;
+    padding: 20px;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+img {
+    width: 100%;
+    border-radius: 20px;
+}
+.gallery {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr 1fr 40px;
+    gap: 20px;
+    align-items: center;
+}
+.button-scroll {
+    color: white;
+    transition: 0.3s ease;
+}
+.button-scroll:hover {
+    color: black;
+}
+.gallery .fa-solid {
+    font-size: 40px;
+}
+.avis {
+    margin-top: 20px;
+}
+.avis .fa-solid {
+    color: #f90;
+}
+.description {
+    text-align: justify;
+    margin: 50px 0;
+    color: #333;
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+.price strong {
+    font-size: 1.4rem;
+}
+.stock {
+    background-color: #a1ea00;
+    padding: 8px 10px;
+    border-radius: 15px;
+}
+hr {
+    margin: 20px 0;
+    color: white;
+}
+h2 {
+    font-size: 1rem;
+    margin: 30px 0 10px;
+}
+.colors {
+    display: flex;
+    gap: 10px;
+}
+.color {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.gray {
+    background-color: #989898;
+}
+.black {
+    background-color: black;
+}
+.orange {
+    background-color: #E65119;
+}
+.blue {
+    background-color: #46A3E8;
+}
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.size a {
+    display: inline-block;
+    width: 80px;
+    padding: 10px 0;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #bbb;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+.size a:hover {
+    border: 2px solid black;
+}
+.size .select {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+.order {
+    margin-top: 50px;
+    text-align: right;
+}
+.add-cart {
+    background-color: #E65119;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .size a {
+        width: 65px;
+    }
+}

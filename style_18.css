@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: blue;
+}
+nav {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: #008CFF;
+  transition: 0.3s;
+}
+.sous-menu {
+  display: none;
+  position: absolute;
+  background-color: #008CFF;
+  min-width: 150px;
+}
+nav li:hover .sous-menu {
+  display: block;
+  background-color: blue;
+}

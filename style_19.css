@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-width: 1140px;
+  margin: 100px auto;
+  text-align: center;
+}
+.polaroid {
+  display: inline-block;
+  rotate: -15deg;
+  width: 390px;
+  height: 480px;
+  background-color: white;
+  padding: 25px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+  transition: 0.5s;
+}
+.polaroid img {
+  filter: sepia(100%);
+}
+.polaroid:hover {
+  rotate: 0deg;
+  transition: 0.5s;
+}
+.polaroid:hover img {
+  filter: sepia(0);
+  transition: 0.5s;
+}
+.polaroid:nth-of-type(even) {
+  rotate: 5deg;
+}
+.polaroid:nth-of-type(even):hover {
+  rotate: 0deg;
+  transition: 0.5s;
+}
+img {
+  width: 100%;
+}
+h2 {
+  text-align: center;
+}

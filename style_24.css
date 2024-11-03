@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+}
+.table {
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.head {
+    padding: 20px;
+    color:white;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
+}
+.normal {
+    background: linear-gradient(135deg, #03b2e2 0%, #3a067d 100%);
+}
+.popular {
+    background: linear-gradient(135deg, #ff9d6f 0%, #ff0000 100%);
+}
+h2 {
+    font-size: 2rem;
+}
+.price {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+ul {
+    padding: 30px;
+    list-style: none;
+    color: #333;
+}
+li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.check::before {
+    content: url("./images/check.png");
+    margin-right: 8px;
+}
+.uncheck::before {
+    content: url("./images/uncheck.png");
+    margin-right: 8px;
+}
+.table p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.button {
+    background-color: #FF5139;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Styles pour les écrans de tailles moyennes (tablette) */
+@media only screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Styles pour les écrans de grandes tailles (desktop) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

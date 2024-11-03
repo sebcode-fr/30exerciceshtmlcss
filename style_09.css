@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+table {
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+.svt {
+    background-color: #86efac;
+}
+.maths {
+    background-color: #fdba74;
+}
+.francais {
+    background-color: #c4b5fd;
+}
+.anglais {
+    background-color: #fca5a5;
+}
+.histoire {
+    background-color: #fde047;
+}
+.eps {
+    background-color: #93c5fd;
+}
+.art {
+    background-color: #f9a8d4;
+}
+.techno {
+    background-color: #04ffff;
+}
+.physique {
+    background-color:darkcyan;
+    color: white;
+}
+
+.musique {
+    background-color: #ff4b4b;
+    color: white;
+}
+.dejeuner {
+    background-color: #9ca3af;
+    color: white;
+}

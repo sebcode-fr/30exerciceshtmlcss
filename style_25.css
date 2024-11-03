@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  color: #333;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("./images/pattern.jpg");
+}
+h1, h2 {
+  font-weight: 700;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+.title {
+  text-align: center;
+  padding: 0 20px;
+}
+.description p {
+  font-size: 0.9rem;
+}
+.title p {
+  text-align: justify;
+  margin-top: 30px;
+}
+.description {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.time::before {
+  content: url("./images/chronometre.png");
+  margin-right: 8px;
+}
+.difficulty::before {
+  content: url("./images/toque.png");
+  margin-right: 8px;
+}
+.budget::before {
+  content: url("./images/tirelire.png");
+  margin-right: 8px;
+}
+.ingredient::before {
+  content: url("./images/ingredients.png");
+}
+.preparation::before {
+  content: url("./images/preparation.png");
+}
+h2 {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 20px auto 1fr;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  color: #BE185D;
+}
+h2::after {
+  content: '';
+  border-bottom: 6px double;
+}
+.ingredient-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.thumb p {
+  text-align: center;
+}
+h3 {
+  margin: 20px 0;
+}
+/* Styles pour les écrans de tailles moyennes (tablette) */
+@media only screen and (min-width: 768px) {
+  .head {
+    flex-direction: row;
+  }  
+  .photo {
+    width: 50%;
+  }
+  .title {
+    width: 50%;
+  }
+  .description p {
+    font-size: 1.2rem;
+  }
+  .ingredient-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* Styles pour les écrans de grandes tailles (desktop) */
+@media only screen and (min-width: 1200px) {
+  .photo {
+    width: 60%;
+  }
+  .title {
+    width: 40%;
+  }
+  .ingredient-list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
